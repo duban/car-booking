@@ -22,7 +22,7 @@ This needs [Node.js to be installed](https://docs.npmjs.com/downloading-and-inst
 #### Project setup with docker and docker compose
 ```
 - docker-compose build
-- docker-compose up
+- docker-compose up -d
 ```
 
 #### Import Postman Collection
