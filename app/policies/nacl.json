@@ -1,0 +1,32 @@
+[
+        {
+                "group": "admin",
+                "permissions": [
+                        {
+                                "resource": "*",
+                                "methods": "*",
+                                "action": "allow"
+                        }
+                ]
+        },
+        {
+                "group": "user",
+                "permissions": [
+                        {
+                                "resource": "login/",
+                                "methods": ["POST"],
+                                "action": "allow"
+                        },
+                        {
+                                "resource": "chart/*",
+						        "methods": ["POST", "GET", "PUT","DELETE"],
+						        "action": "allow"
+                        },
+                        {
+                                "resource": "payment/*",
+                                "methods": ["POST", "GET", "PUT"],
+                                "action": "allow"
+                        }
+                ]
+        }
+]

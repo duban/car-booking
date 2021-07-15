@@ -1,0 +1,12 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: './'
+      dockerfile: Dockerfile
+    ports:
+       - 3002:3002
+    image: car-booking:latest
+    container_name: car-booking-api
+    network_mode: "host"
+
